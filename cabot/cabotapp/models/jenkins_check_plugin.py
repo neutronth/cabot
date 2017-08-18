@@ -63,7 +63,6 @@ class JenkinsStatusCheck(StatusCheck):
                 result.raw_data = status
         return result
 
-
     def calculate_debounced_passing(self, recent_results, debounce=0):
         """
         `debounce` is the number of previous job failures we need (not including this)
